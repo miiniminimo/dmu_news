@@ -7,7 +7,8 @@ const BASE_URL = "https://newsapi.org/v2";
 export const fetchTopHeadlines = async (category = "", search = "", page = 1) => {
     try {
         const params = {
-            country: "gb",
+            country: "us",
+            category:"general",
             page,
             pageSize: 9,
             apiKey: API_KEY,
